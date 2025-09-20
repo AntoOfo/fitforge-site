@@ -9,10 +9,10 @@ export default function HeroSection() {
             <div 
             className="w-full h-[calc(100vh-96px)] bg-cover bg-center bg-[rgba(100,0,0,0.48)] bg-blend-overlay"
             style={{ backgroundImage: `url(${HeroImg})` }}>
-                <div className="font-[Poppins] text-white">
+                <div className="flex flex-col items-center justify-center h-full gap-6 font-[Poppins] text-white">
                     <h1 className="font-extrabold text-5xl">Transform Your Body, Transform Your Life</h1>
                     <h2 className="font-semibold text-3xl">Join our community and reach your fitness goals</h2>
-                    <button className="bg-white rounded-[40px] px-10 py-6 shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]  font-semibold text-2xl text-[rgba(192,57,43,1)]">
+                    <button className="bg-white rounded-[40px] px-10 py-5 shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]  font-semibold text-2xl text-[rgba(192,57,43,1)]">
                         Get Started
                     </button>
                 </div>
