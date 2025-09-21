@@ -2,12 +2,12 @@ import { joinData } from "../data/joinData"
 
 export default function Join() {
     return (
-        <section className="mt-16 w-full px-8 flex flex-col items-center font-[Poppins]">
-            <div>
+        <section className="mt-16 w-full flex flex-col items-center font-[Poppins]">
+            <div className="ml-32 mr-32">
                 <h2 className="text-center font-bold text-[40px] text-[rgba(192,57,43,1)]">
                     Why Join Us?
                 </h2>
-                <div className="mt-12 mb-16 flex justify-between gap-48 w-full">
+                <div className="mt-12 mb-16 flex justify-between gap-[221px] w-full">
                     {joinData.map(join => (
                         <div className="flex flex-col items-center">
                             <img src={join.image} className="w-[75px]" />
