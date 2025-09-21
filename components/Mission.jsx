@@ -16,14 +16,14 @@ export default function Mission() {
                     <p className="mt-9 font-normal text-2xl text-[rgba(0,0,0,0.7)]">We are the catalyst for your best life, not just a facility. We believe true fitness is built on confidence, consistency, and community. We commit to providing expert guidance, a judgment-free environment, and the tools you need to not just meet your goals, but to redefine your potential and sustain lifelong well-being.</p>
                 </div>
                 
-                <div className="w-full h-80 rounded-4xl overflow-hidden">
+                <div className="w-89 h-96 rounded-4xl overflow-hidden flex-shrink-0">
                     <Carousel className="w-full h-full">
                         <CarouselContent className="h-full">
                             {images.map((imgSrc, index) => (
                                 <CarouselItem key={index} className="basis-full h-full">
                                     <Card className="p-0 w-full h-full">
                                         <CardContent className="p-0 w-full h-full">
-                                            <img src={imgSrc} className="w-80 h-80 object-cover" />
+                                            <img src={imgSrc} className="w-full h-full object-cover" />
                                         </CardContent>
                                     </Card>
                                 </CarouselItem>
