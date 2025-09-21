@@ -1,3 +1,4 @@
+import { joinData } from "../data/joinData"
 
 export default function Join() {
     return (
@@ -5,11 +6,12 @@ export default function Join() {
             <div>
                 <h2>Why Join Us?</h2>
                 <span>
-                    <div>
-                        <img src={} />
-                        <h3>Flexible Plans</h3>
-                    </div>
-
+                    {joinData.map(join => (
+                        <div>
+                            <img src={join.image} />
+                            <h3>{join.text}</h3>
+                        </div>
+                    ))}
                 </span>
             </div>
         </section>
