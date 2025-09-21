@@ -11,7 +11,7 @@ export default function Join() {
                     {joinData.map(join => (
                         <div className="flex flex-col items-center">
                             <img src={join.image} className="w-[75px]" />
-                            <h3 className="font-medium text-2xl text-[rgba(192,57,43,1)]">
+                            <h3 className="mt-2 font-medium text-2xl text-[rgba(192,57,43,1)]">
                                 {join.text}
                             </h3>
                         </div>
