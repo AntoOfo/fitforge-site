@@ -17,15 +17,15 @@ export default function Mission() {
                 </div>
                 
                 <div className="w-89 h-96 rounded-4xl overflow-hidden flex-shrink-0">
+
+                    {/* outer wrapper for whole carousel, scrolling.. snapping*/}
                     <Carousel className="w-full h-full">
+
+                        {/* container that holds the slides*/}
                         <CarouselContent className="h-full">
-                            {images.map((imgSrc, index) => (
-                                <CarouselItem key={index} className="basis-full h-full">
-                                    <Card className="p-0 w-full h-full">
-                                        <CardContent className="p-0 w-full h-full">
-                                            <img src={imgSrc} className="w-full h-full object-cover" />
-                                        </CardContent>
-                                    </Card>
+                            {images.map((imgSrc, index) => (           
+                                <CarouselItem key={index} className="basis-full h-full px-0"> {/* one single slide in carousel */}
+                                    <img src={imgSrc} className="w-full h-full object-cover" />
                                 </CarouselItem>
                             ))}
                         </CarouselContent>
