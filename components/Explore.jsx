@@ -63,10 +63,10 @@ export default function Explore() {
                             </CarouselContent>
                         
                         
-                        <div className="flex items-center gap-4">
-                            <Progress value={(current / count) * 100} className="w-36 " />
-                            <CarouselPrevious className="static translate-y-0" />
-                            <CarouselNext className="static translate-y-0" />
+                        <div className="flex items-center justify-center gap-6">
+                            <CarouselPrevious className="static translate-y-0 hover:cursor-pointer" />
+                            <Progress value={(current / count) * 100} className="w-40 " />
+                            <CarouselNext className="static translate-y-0 hover:cursor-pointer" />
                         </div>
                     </Carousel>
                     
