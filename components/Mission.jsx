@@ -1,13 +1,15 @@
-import ImageOne from "../images/mission_img.jpg"
-import ImageTwo from "../images/mission_2.jpg"
+import ImageTwo from "../images/mission_img.jpg"
+import ImageOne from "../images/mission_2.jpg"
 import ImageThree from "../images/mission_3.jpg"
 import ImageFour from "../images/mission_4.jpg"
+import ImageFive from "../images/mission_5.jpg"
+import ImageSix from "../images/mission_6.jpg"
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 
 export default function Mission() {
-    const images = [ImageOne, ImageTwo, ImageThree, ImageFour]
+    const images = [ImageOne, ImageTwo, ImageThree, ImageFour, ImageFive, ImageSix]
     return (
         <section className="w-full bg-[rgba(239,239,239,1)] font-[Poppins]">
             <div className="flex gap-52 py-16 mt-16 ml-32 mr-32">
@@ -29,8 +31,8 @@ export default function Mission() {
                                 </CarouselItem>
                             ))}
                         </CarouselContent>
-                        <CarouselPrevious  className="absolute left-3 top-1/2 -translate-y-1/2 z-20"/>
-                        <CarouselNext className="absolute right-3 top-1/2 -translate-y-1/2 z-20" />
+                        <CarouselPrevious  className="absolute left-3 top-1/2 -translate-y-1/2 z-20 hover:cursor-pointer"/>
+                        <CarouselNext className="absolute right-3 top-1/2 -translate-y-1/2 z-20 hover:cursor-pointer" />
                     </Carousel>
                 </div>
             </div>
