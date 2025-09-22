@@ -1,4 +1,13 @@
-import Placeholder from "../images/mission_img.jpg"
+import { exploreData } from "../data/exploreData"
+
+import { Card, CardContent } from "@/components/ui/card"
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
 
 export default function Explore() {
     return (
