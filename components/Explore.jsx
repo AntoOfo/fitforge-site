@@ -37,17 +37,17 @@ export default function Explore() {
 
 
                 <div className="flex mt-3">
-                    <Carousel setApi={setApi} className="w-[1390px]"> 
+                    <Carousel setApi={setApi} className="w-[1521px]"> 
                             <CarouselContent className="-ml-1">
                                 {exploreData.map(explore => (
                                     <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/2">
-                                        <div className="p-4">
+                                        <div className="p-0">
                                             <Card className="border-0 shadow-none">
                                                 <CardContent className="flex flex-col p-4">
                                                     <img 
                                                         src={explore.image} 
                                                         alt={explore.title} 
-                                                        className="w-full h-[348px] object-cover rounded-lg border-4 border-[rgba(192,57,43,1)]"
+                                                        className="w-full h-[348px] object-cover rounded-lg border-3 border-[rgba(192,57,43,1)]"
                                                     />
                                                     <h3 className="mt-4 font-bold text-[32px] text-[rgba(192,57,43,0.8)]">
                                                         {explore.title}
