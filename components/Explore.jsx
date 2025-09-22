@@ -16,7 +16,7 @@ export default function Explore() {
                 <h2 className="font-bold text-[40px] text-[rgba(192,57,43,1)]">Explore The Gym</h2>
 
 
-                <div className="flex mt-16">
+                <div className="flex mt-3">
                     <Carousel className="w-[1390px]"> 
                         <CarouselContent className="-ml-1">
                             {exploreData.map(explore => (
@@ -27,7 +27,7 @@ export default function Explore() {
                                                 <img 
                                                     src={explore.image} 
                                                     alt={explore.title} 
-                                                    className="w-full h-[348px] object-cover rounded-lg"
+                                                    className="w-full h-[348px] object-cover rounded-lg border-4 border-[rgba(192,57,43,1)]"
                                                 />
                                                 <h3 className="mt-4 font-bold text-[32px] text-[rgba(192,57,43,0.8)]">
                                                     {explore.title}
@@ -41,8 +41,11 @@ export default function Explore() {
                                 </CarouselItem>
                             ))}
                         </CarouselContent>
-                        <CarouselPrevious />
-                        <CarouselNext />
+                        
+                        <div className="flex gap-4">
+                            <CarouselPrevious className="static translate-y-0" />
+                            <CarouselNext className="static translate-y-0" />
+                        </div>
                     </Carousel>
                 </div>
             </div>
