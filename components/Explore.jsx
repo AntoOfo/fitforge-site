@@ -3,9 +3,9 @@ import Placeholder from "../images/mission_img.jpg"
 export default function Explore() {
     return (
         <section className="w-full font-[Poppins] bg-amber-300">
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col py-16 items-center">
                 <h2 className="font-bold text-[40px] text-[rgba(192,57,43,1)]">Explore The Gym</h2>
-                <div>
+                <div className="flex mt-16">
                     <div>
                         <img src={Placeholder} className="w-[572px] h-[348px]"/>
                         <h3 className="font-bold text-[32px] text-[rgba(192,57,43,0.8)]">Cardio Equipment</h3>
