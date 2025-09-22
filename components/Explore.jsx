@@ -11,15 +11,39 @@ import {
 
 export default function Explore() {
     return (
-        <section className="w-full font-[Poppins] bg-amber-300">
+        <section className="w-full font-[Poppins]">
             <div className="flex flex-col py-16 items-center">
                 <h2 className="font-bold text-[40px] text-[rgba(192,57,43,1)]">Explore The Gym</h2>
+
+
                 <div className="flex mt-16">
-                    <div>
-                        <img src={Placeholder} className="w-[572px] h-[348px]"/>
-                        <h3 className="font-bold text-[32px] text-[rgba(192,57,43,0.8)]">Cardio Equipment</h3>
-                        <p className="w-[520px] font-normal text-[20px] text-[rgba(0,0,0,0.8)]">Get your heart pumping with our top-of-the-line treadmills, bikes, cross trainers, and rowers ideal for endurance, fat burn, and overall fitness.</p>
-                    </div>
+                    <Carousel className="w-[1390px]"> 
+                        <CarouselContent className="-ml-1">
+                            {exploreData.map(explore => (
+                                <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/2">
+                                    <div className="p-4">
+                                        <Card className="border-0 shadow-none">
+                                            <CardContent className="flex flex-col p-4">
+                                                <img 
+                                                    src={explore.image} 
+                                                    alt={explore.title} 
+                                                    className="w-full h-[348px] object-cover rounded-lg"
+                                                />
+                                                <h3 className="mt-4 font-bold text-[32px] text-[rgba(192,57,43,0.8)]">
+                                                    {explore.title}
+                                                </h3>
+                                                <p className="mt-2 w-full font-normal text-[20px] text-[rgba(0,0,0,0.8)]">
+                                                    {explore.desc}
+                                                </p>
+                                            </CardContent>
+                                        </Card>
+                                    </div>
+                                </CarouselItem>
+                            ))}
+                        </CarouselContent>
+                        <CarouselPrevious />
+                        <CarouselNext />
+                    </Carousel>
                 </div>
             </div>
         </section>
