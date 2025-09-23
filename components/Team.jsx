@@ -1,7 +1,10 @@
 import { teamData } from "../data/teamData"
 
+import { Separator } from "@/components/ui/separator"
+
 export default function Team() {
     return (
+        <>
         <section className="w-full py-20 font-[Poppins]">
             <div className="ml-32 mr-32">
                 <h1 className="font-bold text-[40px] text-[rgba(192,57,43,1)]">Meet The Team</h1>
@@ -17,5 +20,7 @@ export default function Team() {
                 </div>
             </div>
         </section>
+        <Separator className="bg-[rgba(192,57,43,1)] rounded-2xl mx-auto" />
+        </>
     )
 }
