@@ -4,6 +4,7 @@ import Join from "./components/Join"
 import Mission from "./components/Mission"
 import Explore from "./components/Explore"
 import Membership from "./components/Membership"
+import Team from "./components/Team"
 
 export default function App() {
     return (
@@ -13,6 +14,7 @@ export default function App() {
         <Mission />
         <Explore />
         <Membership />
+        <Team />
         </>
     )
 }
