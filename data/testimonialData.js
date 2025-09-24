@@ -5,7 +5,7 @@ import Jess from "../images/reviewer_3.jpg"
 export const testimonialData = [
     {
         image: Sarah,
-        review: '"Ive tried a few gyms, but this is the first one where I actually feel like showing up. The equipment is top-notch, and the lack of judgment made all the difference. I hit my first major strength goal here!"',
+        review: '"I have tried a few gyms, but this is the first one where I actually feel like showing up. The equipment is top-notch, and the lack of judgment made all the difference. I hit my first major strength goal here!"',
         name: "Sarah K",
         role: "6-Month Contract"
     },
