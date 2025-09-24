@@ -6,6 +6,7 @@ import Explore from "./components/Explore"
 import Membership from "./components/Membership"
 import Team from "./components/Team"
 import Testimonials from "./components/Testimonials"
+import Footer from "./components/Footer"
 
 export default function App() {
     return (
@@ -17,6 +18,7 @@ export default function App() {
         <Membership />
         <Team />
         <Testimonials />
+        <Footer />
         </>
     )
 }
