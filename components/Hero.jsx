@@ -4,6 +4,7 @@ import HeroImg from "../images/hero_img.jpg";
 export default function HeroSection() {
   return (
     <section
+      id="home"
       className="w-full h-[calc(100vh-80px)] bg-cover bg-center bg-[rgba(53,0,0,0.55)] bg-blend-overlay"
       style={{ backgroundImage: `url(${HeroImg})` }}
     >

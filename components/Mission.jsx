@@ -24,7 +24,10 @@ export default function Mission() {
     ImageSix,
   ];
   return (
-    <section className="w-full bg-[rgba(239,239,239,1)] font-[Poppins]">
+    <section
+      id="about"
+      className="w-full bg-[rgba(239,239,239,1)] font-[Poppins]"
+    >
       <div className="flex gap-52 py-16 mt-6 ml-32 mr-32">
         <div>
           <h2 className="font-bold text-[40px] text-[rgba(192,57,43,1)]">

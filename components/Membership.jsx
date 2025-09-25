@@ -2,7 +2,10 @@ import { membershipData } from "../data/membershipData";
 
 export default function Membership() {
   return (
-    <section className="w-full py-20 bg-[rgba(192,57,43,1)] font-[Poppins]">
+    <section
+      id="pricing"
+      className="w-full py-20 bg-[rgba(192,57,43,1)] font-[Poppins]"
+    >
       <div className="ml-32 mr-32">
         <h1 className="font-bold text-[40px] text-white">Membership Plans</h1>
         <p className="font-light text-[20px] text-[rgba(255,255,255,0.85)]">

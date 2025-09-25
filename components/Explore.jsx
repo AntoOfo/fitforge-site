@@ -31,7 +31,7 @@ export default function Explore() {
   }, [api]);
 
   return (
-    <section className="w-full font-[Poppins]">
+    <section id="services" className="w-full font-[Poppins]">
       <div className="flex flex-col py-16 items-center">
         <h2 className="font-bold text-[40px] text-[rgba(192,57,43,1)]">
           Explore The Gym
