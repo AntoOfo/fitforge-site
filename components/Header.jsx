@@ -8,7 +8,10 @@ export default function Header() {
       <img src={Logo} className="w-20" />
       <nav className="flex ml-[483px] gap-9 font-[Poppins] font-normal text-lg">
         {navLinks.map((link) => (
-          <a className="hover:text-[rgba(192,57,43,1)] cursor-pointer">
+          <a
+            href={`#${link.toLowerCase()}`}
+            className="hover:text-[rgba(192,57,43,1)] cursor-pointer"
+          >
             {link}
           </a>
         ))}
