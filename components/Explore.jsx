@@ -38,7 +38,7 @@ export default function Explore() {
         </h2>
 
         <div className="flex mt-3">
-          <Carousel setApi={setApi} className="w-[1521px]">
+          <Carousel setApi={setApi} className="w-[1300px]">
             <CarouselContent className="-ml-1">
               {exploreData.map((explore) => (
                 <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/2">
