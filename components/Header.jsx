@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import Logo from "../images/sitelogo.png";
 
 export default function Header() {
@@ -8,12 +9,15 @@ export default function Header() {
       <img src={Logo} className="w-20" />
       <nav className="flex ml-[483px] gap-9 font-[Poppins] font-normal text-lg">
         {navLinks.map((link) => (
-          <a
-            href={`#${link.toLowerCase()}`}
+          <Link
+            to={link.toLowerCase()}
+            smooth={true}
+            offset={-80}
+            duration={500}
             className="hover:text-[rgba(192,57,43,1)] cursor-pointer"
           >
             {link}
-          </a>
+          </Link>
         ))}
       </nav>
     </header>
