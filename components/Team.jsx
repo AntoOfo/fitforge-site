@@ -7,12 +7,18 @@ export default function Team() {
     <>
       <section className="w-full py-20 font-[Poppins]">
         <div className="ml-32 mr-32">
-          <h1 className="font-bold text-[40px] text-[rgba(192,57,43,1)]">
+          <h1
+            data-aos="fade-up"
+            className="font-bold text-[40px] text-[rgba(192,57,43,1)]"
+          >
             Meet The Team
           </h1>
           <div className="flex justify-between mt-[72px]">
             {teamData.map((team) => (
-              <div className="justify-items-center py-12 px-4 rounded-[134px] bg-[rgba(239,239,239,1)] shadow-[0_2px_10px_1px_rgba(0,0,0,0.15)]">
+              <div
+                data-aos="fade-up"
+                className="justify-items-center py-12 px-4 rounded-[134px] bg-[rgba(239,239,239,1)] shadow-[0_2px_10px_1px_rgba(0,0,0,0.15)]"
+              >
                 <img
                   src={team.image}
                   className="w-[149px] h-[149px] rounded-full object-cover shadow-[0_4px_15.1px_1px_rgba(0,0,0,0.15)]"
@@ -31,7 +37,10 @@ export default function Team() {
           </div>
         </div>
       </section>
-      <Separator className="bg-[rgba(192,57,43,1)] rounded-2xl mx-auto" />
+      <Separator
+        data-aos="fade-right"
+        className="bg-[rgba(192,57,43,1)] rounded-2xl mx-auto"
+      />
     </>
   );
 }
