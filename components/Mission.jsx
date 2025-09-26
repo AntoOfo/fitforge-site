@@ -30,10 +30,16 @@ export default function Mission() {
     >
       <div className="flex gap-52 py-16 mt-6 ml-32 mr-32">
         <div>
-          <h2 className="font-bold text-[40px] text-[rgba(192,57,43,1)]">
+          <h2
+            data-aos="fade-right"
+            className="font-bold text-[40px] text-[rgba(192,57,43,1)]"
+          >
             Our Mission
           </h2>
-          <p className="mt-9 font-normal text-2xl text-[rgba(0,0,0,0.7)]">
+          <p
+            data-aos="fade-right"
+            className="mt-9 font-normal text-2xl text-[rgba(0,0,0,0.7)]"
+          >
             We are the catalyst for your best life, not just a facility. We
             believe true fitness is built on confidence, consistency, and
             community. We commit to providing expert guidance, a judgment-free
@@ -42,7 +48,10 @@ export default function Mission() {
           </p>
         </div>
 
-        <div className="w-89 h-96 rounded-4xl overflow-hidden flex-shrink-0">
+        <div
+          data-aos="fade-left"
+          className="w-89 h-96 rounded-4xl overflow-hidden flex-shrink-0"
+        >
           {/* outer wrapper for whole carousel, scrolling.. snapping*/}
           <Carousel className="w-full h-full">
             {/* container that holds the slides*/}
