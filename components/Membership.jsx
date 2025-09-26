@@ -7,13 +7,21 @@ export default function Membership() {
       className="w-full py-20 bg-[rgba(192,57,43,1)] font-[Poppins]"
     >
       <div className="ml-32 mr-32">
-        <h1 className="font-bold text-[40px] text-white">Membership Plans</h1>
-        <p className="font-light text-[20px] text-[rgba(255,255,255,0.85)]">
+        <h1 data-aos="fade-right" className="font-bold text-[40px] text-white">
+          Membership Plans
+        </h1>
+        <p
+          data-aos="fade-right"
+          className="font-light text-[20px] text-[rgba(255,255,255,0.85)]"
+        >
           Find the commitment level that fits your goals and budget.
         </p>
         <div className="flex justify-between">
           {membershipData.map((membership) => (
-            <div className="mt-12 px-5 py-6 rounded-2xl bg-white">
+            <div
+              data-aos="fade-left"
+              className="mt-12 px-5 py-6 rounded-2xl bg-white"
+            >
               <p className="font-bold text-[20px]">{membership.type}</p>
               <span className="mt-[3px] mb-0.5 flex items-baseline">
                 <h1 className="font-bold text-[64px] text-[rgba(192,57,43,1)]">
