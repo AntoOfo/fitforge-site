@@ -33,12 +33,15 @@ export default function Explore() {
   return (
     <section id="services" className="w-full font-[Poppins]">
       <div className="flex flex-col py-16 items-center">
-        <h2 className="font-bold text-[40px] text-[rgba(192,57,43,1)]">
+        <h2
+          data-aos="fade-up"
+          className="font-bold text-[40px] text-[rgba(192,57,43,1)]"
+        >
           Explore The Gym
         </h2>
 
         <div className="flex mt-3">
-          <Carousel setApi={setApi} className="w-[1300px]">
+          <Carousel data-aos="fade-up" setApi={setApi} className="w-[1300px]">
             <CarouselContent className="-ml-1">
               {exploreData.map((explore) => (
                 <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/2">
