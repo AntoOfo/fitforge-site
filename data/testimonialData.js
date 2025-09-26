@@ -1,6 +1,6 @@
-import Sarah from "../images/reviewer_1.jpg"
-import Mark from "../images/reviewer_2.jpg"
-import Jess from "../images/reviewer_3.jpg"
+import Sarah from "../images/reviewer_1.webp"
+import Mark from "../images/reviewer_2.webp"
+import Jess from "../images/reviewer_3.webp"
 
 export const testimonialData = [
     {
