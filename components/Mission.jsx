@@ -1,9 +1,9 @@
-import ImageTwo from "../images/mission_img.jpg";
-import ImageOne from "../images/mission_2.jpg";
-import ImageThree from "../images/mission_3.jpg";
-import ImageFour from "../images/mission_4.jpg";
-import ImageFive from "../images/mission_5.jpg";
-import ImageSix from "../images/mission_6.jpg";
+import ImageTwo from "../images/mission_img.webp";
+import ImageOne from "../images/mission_2.webp";
+import ImageThree from "../images/mission_3.webp";
+import ImageFour from "../images/mission_4.webp";
+import ImageFive from "../images/mission_5.webp";
+import ImageSix from "../images/mission_6.webp";
 
 import { Card, CardContent } from "@/components/ui/card";
 import {
