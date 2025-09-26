@@ -1,16 +1,22 @@
 import Header from "./Header";
 import HeroImg from "../images/hero_img.jpg";
+import HeroVideo from "../videos/hero_video.mp4";
 
 export default function HeroSection() {
   return (
-    <section
-      id="home"
-      className="w-full h-[calc(100vh-80px)] bg-cover bg-center bg-[rgba(53,0,0,0.55)] bg-blend-overlay"
-      style={{ backgroundImage: `url(${HeroImg})` }}
-    >
+    <section id="home" className="w-full h-[calc(100vh-80px)] overflow-hidden">
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover"
+      >
+        <source src={HeroVideo} type="video/mp4" />
+      </video>
       <div
         data-aos="fade-right"
-        className="flex flex-col items-center justify-center h-full gap-6 font-[Poppins] text-white"
+        className="relative z-10 flex flex-col items-center justify-center h-full gap-6 font-[Poppins] text-white"
       >
         <h1 className="font-extrabold text-5xl">
           Transform Your Body, Transform Your Life
