@@ -1,9 +1,9 @@
-import Cardio from "../images/cardio.jpg"
-import Strength from "../images/explore_2.jpg"
-import Group from "../images/explore_3.jpg"
-import Functional from "../images/explore_4.jpg"
-import Recovery from "../images/explore_5.jpg"
-import Training from "../images/explore_6.jpg"
+import Cardio from "../images/cardio.webp"
+import Strength from "../images/explore_2.webp"
+import Group from "../images/explore_3.webp"
+import Functional from "../images/explore_4.webp"
+import Recovery from "../images/explore_5.webp"
+import Training from "../images/explore_6.webp"
 
 export const exploreData = [
     {
@@ -41,5 +41,5 @@ export const exploreData = [
         title: "Personal Training",
         desc: "Work one-on-one with certified trainers who tailor programs to your goals and keep you progressing with expert guidance."
     }
-    
+
 ]

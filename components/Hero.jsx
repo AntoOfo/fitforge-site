@@ -25,7 +25,7 @@ export default function HeroSection() {
           Join our community and reach your fitness goals
         </h2>
         {/* for later: border-2 border-[rgba(192,57,43,0.4)] */}
-        <button className="bg-white rounded-[40px] px-10 py-5 shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]  font-semibold text-2xl text-[rgba(192,57,43,1)] hover:cursor-pointer hover:scale-105 duration-300 hero-pulse">
+        <button className="bg-white rounded-[40px] border-2 border-[rgba(192,57,43,0.4)] px-10 py-5 shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]  font-semibold text-2xl text-[rgba(192,57,43,1)] hover:cursor-pointer hover:scale-105 duration-300 hero-pulse">
           Get Started
         </button>
       </div>
