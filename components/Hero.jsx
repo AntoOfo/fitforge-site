@@ -8,7 +8,10 @@ export default function HeroSection() {
       className="w-full h-[calc(100vh-80px)] bg-cover bg-center bg-[rgba(53,0,0,0.55)] bg-blend-overlay"
       style={{ backgroundImage: `url(${HeroImg})` }}
     >
-      <div className="flex flex-col items-center justify-center h-full gap-6 font-[Poppins] text-white">
+      <div
+        data-aos="fade-right"
+        className="flex flex-col items-center justify-center h-full gap-6 font-[Poppins] text-white"
+      >
         <h1 className="font-extrabold text-5xl">
           Transform Your Body, Transform Your Life
         </h1>
