@@ -1,7 +1,7 @@
-import Marcus from "../images/team_1.jpg"
-import Ava from "../images/team_2.jpg"
-import Jasmine from "../images/team_3.jpg"
-import David from "../images/team_4.jpg"
+import Marcus from "../images/team_1.webp"
+import Ava from "../images/team_2.webp"
+import Jasmine from "../images/team_3.webp"
+import David from "../images/team_4.webp"
 
 export const teamData = [
     {
