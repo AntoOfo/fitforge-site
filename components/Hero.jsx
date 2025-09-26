@@ -15,7 +15,7 @@ export default function HeroSection() {
         <h2 className="font-semibold text-3xl">
           Join our community and reach your fitness goals
         </h2>
-        <button className="bg-white rounded-[40px] px-10 py-5 shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]  font-semibold text-2xl text-[rgba(192,57,43,1)] hover:cursor-pointer">
+        <button className="bg-white rounded-[40px] px-10 py-5 shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]  font-semibold text-2xl text-[rgba(192,57,43,1)] hover:cursor-pointer hover:scale-105 duration-300">
           Get Started
         </button>
       </div>
