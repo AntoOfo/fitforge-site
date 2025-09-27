@@ -16,13 +16,15 @@ export default function Team() {
           <div className="flex justify-between mt-[72px]">
             {teamData.map((team) => (
               <div
+                key={team.name}
                 data-aos="fade-up"
-                className="justify-items-center py-12 px-4 rounded-[134px] bg-[rgba(239,239,239,1)] shadow-[0_2px_10px_1px_rgba(0,0,0,0.15)]"
+                className="justify-items-center py-12 px-4 rounded-[134px] bg-[rgba(239,239,239,1)] shadow-[0_2px_8px_rgba(0,0,0,0.12)]"
               >
                 <img
                   src={team.image}
                   loading="lazy"
-                  className="w-[149px] h-[149px] rounded-full object-cover shadow-[0_4px_15.1px_1px_rgba(0,0,0,0.15)]"
+                  alt={team.name}
+                  className="w-[149px] h-[149px] rounded-full object-cover shadow-[0_4px_10px_rgba(0,0,0,0.12)]"
                 />
                 <h3 className="mt-[18px] font-semibold text-[20px] text-[rgba(192,57,43,1)]">
                   {team.name}

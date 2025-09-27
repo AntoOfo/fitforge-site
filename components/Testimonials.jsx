@@ -13,14 +13,16 @@ export default function Testimonials() {
         <div className="flex justify-between mt-[110px]">
           {testimonialData.map((testimony) => (
             <div
+              key={testimony.name}
               data-aos="fade-up"
-              className="relative flex flex-col p-6 bg-[rgba(239,239,239,1)] rounded-[20px] shadow-[0_2px_10px_1px_rgba(0,0,0,0.15)]"
+              className="relative flex flex-col p-6 bg-[rgba(239,239,239,1)] rounded-[20px] shadow-[0_2px_8px_rgba(0,0,0,0.12)]"
             >
               <div className="absolute -top-12 left-1/2 transform -translate-x-1/2">
                 <img
                   src={testimony.image}
                   loading="lazy"
-                  className="w-[130px] h-[130px] rounded-full border-8 border-white object-cover"
+                  alt={testimony.name}
+                  className="w-[130px] h-[130px] rounded-full border-8 border-white object-cover shadow-[0_4px_10px_rgba(0,0,0,0.12)]"
                 />
               </div>
               <p className=" w-[297px] mt-[75px] mb-6 font-medium text-center text-[16px] text-[rgba(0,0,0,0.6)]">
