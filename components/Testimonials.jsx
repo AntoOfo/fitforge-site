@@ -4,17 +4,13 @@ export default function Testimonials() {
   return (
     <section className="w-full py-20 font-[Poppins]">
       <div className="ml-32 mr-32">
-        <h1
-          data-aos="fade-up"
-          className="font-bold text-[40px] text-[rgba(192,57,43,1)]"
-        >
+        <h1 className="font-bold text-[40px] text-[rgba(192,57,43,1)]">
           Testimonials
         </h1>
         <div className="flex justify-between mt-[110px]">
           {testimonialData.map((testimony) => (
             <div
               key={testimony.name}
-              data-aos="fade-up"
               className="relative flex flex-col p-6 bg-[rgba(239,239,239,1)] rounded-[20px] shadow-[0_2px_8px_rgba(0,0,0,0.12)]"
             >
               <div className="absolute -top-12 left-1/2 transform -translate-x-1/2">

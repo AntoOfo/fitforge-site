@@ -7,17 +7,13 @@ export default function Team() {
     <>
       <section className="w-full py-20 font-[Poppins]">
         <div className="ml-32 mr-32">
-          <h1
-            data-aos="fade-up"
-            className="font-bold text-[40px] text-[rgba(192,57,43,1)]"
-          >
+          <h1 className="font-bold text-[40px] text-[rgba(192,57,43,1)]">
             Meet The Team
           </h1>
           <div className="flex justify-between mt-[72px]">
             {teamData.map((team) => (
               <div
                 key={team.name}
-                data-aos="fade-up"
                 className="justify-items-center py-12 px-4 rounded-[134px] bg-[rgba(239,239,239,1)] shadow-[0_2px_8px_rgba(0,0,0,0.12)]"
               >
                 <img
