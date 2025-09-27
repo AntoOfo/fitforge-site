@@ -22,7 +22,7 @@ export default function Testimonials() {
                   src={testimony.image}
                   loading="lazy"
                   alt={testimony.name}
-                  className="w-[130px] h-[130px] rounded-full border-8 border-white object-cover shadow-[0_4px_10px_rgba(0,0,0,0.12)]"
+                  className="w-[130px] h-[130px] rounded-full border-8 border-white object-cover"
                 />
               </div>
               <p className=" w-[297px] mt-[75px] mb-6 font-medium text-center text-[16px] text-[rgba(0,0,0,0.6)]">

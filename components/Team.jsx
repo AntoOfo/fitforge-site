@@ -24,7 +24,7 @@ export default function Team() {
                   src={team.image}
                   loading="lazy"
                   alt={team.name}
-                  className="w-[149px] h-[149px] rounded-full object-cover shadow-[0_4px_10px_rgba(0,0,0,0.12)]"
+                  className="w-[149px] h-[149px] rounded-full object-cover"
                 />
                 <h3 className="mt-[18px] font-semibold text-[20px] text-[rgba(192,57,43,1)]">
                   {team.name}
