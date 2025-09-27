@@ -60,7 +60,11 @@ export default function Mission() {
                 <CarouselItem key={index} className="basis-full h-full px-0">
                   {" "}
                   {/* one single slide in carousel */}
-                  <img src={imgSrc} className="w-full h-full object-cover" />
+                  <img
+                    src={imgSrc}
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                  />
                 </CarouselItem>
               ))}
             </CarouselContent>
