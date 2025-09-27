@@ -1,16 +1,11 @@
 import React from "react";
-
 import { exploreData } from "../data/exploreData";
-
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import { Progress } from "@/components/ui/progress";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Lazy } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/lazy";
 
 export default function Explore() {
   const [api, setApi] = React.useState(null);
