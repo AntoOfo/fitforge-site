@@ -1,5 +1,4 @@
 import Header from "./Header";
-import HeroImg from "../images/hero_img.jpg";
 import HeroVideo from "../videos/hero_video_5.webm";
 
 export default function HeroSection() {
