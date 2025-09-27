@@ -1,8 +1,12 @@
 import React from "react";
 import { exploreData } from "../data/exploreData";
 import { Card, CardContent } from "@/components/ui/card";
+
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Scrollbar } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/scrollbar";
 
 export default function Explore() {
   return (
