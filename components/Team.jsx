@@ -21,6 +21,7 @@ export default function Team() {
               >
                 <img
                   src={team.image}
+                  loading="lazy"
                   className="w-[149px] h-[149px] rounded-full object-cover shadow-[0_4px_15.1px_1px_rgba(0,0,0,0.15)]"
                 />
                 <h3 className="mt-[18px] font-semibold text-[20px] text-[rgba(192,57,43,1)]">
@@ -37,10 +38,7 @@ export default function Team() {
           </div>
         </div>
       </section>
-      <Separator
-        data-aos="fade-right"
-        className="bg-[rgba(192,57,43,1)] rounded-2xl mx-auto"
-      />
+      <Separator className="bg-[rgba(192,57,43,1)] rounded-2xl mx-auto" />
     </>
   );
 }

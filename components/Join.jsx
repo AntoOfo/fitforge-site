@@ -13,7 +13,7 @@ export default function Join() {
         <div className="mt-12 mb-16 flex justify-between gap-[221px] w-full">
           {joinData.map((join) => (
             <div data-aos="fade-up" className="flex flex-col items-center">
-              <img src={join.image} className="w-[75px]" />
+              <img src={join.image} loading="lazy" className="w-[75px]" />
               <h3 className="mt-2 font-medium text-2xl text-[rgba(192,57,43,1)]">
                 {join.text}
               </h3>

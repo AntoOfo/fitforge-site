@@ -19,6 +19,7 @@ export default function Testimonials() {
               <div className="absolute -top-12 left-1/2 transform -translate-x-1/2">
                 <img
                   src={testimony.image}
+                  loading="lazy"
                   className="w-[130px] h-[130px] rounded-full border-8 border-white object-cover"
                 />
               </div>
