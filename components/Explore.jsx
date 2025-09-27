@@ -4,8 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Lazy } from "swiper";
 import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/lazy";
 
 export default function Explore() {
   const [api, setApi] = React.useState(null);
@@ -35,40 +33,26 @@ export default function Explore() {
           Explore The Gym
         </h2>
 
-        <div className="flex mt-3">
-          <Carousel data-aos="fade-up" setApi={setApi} className="w-[1300px]">
-            <CarouselContent className="-ml-1">
-              {exploreData.map((explore) => (
-                <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/2">
-                  <div className="p-0">
-                    <Card className="border-0 shadow-none">
-                      <CardContent className="flex flex-col p-4">
-                        <img
-                          src={explore.image}
-                          alt={explore.title}
-                          loading="lazy"
-                          className="w-full h-[348px] object-cover rounded-lg border-3 border-[rgba(192,57,43,1)]"
-                        />
-                        <h3 className="mt-4 font-bold text-[32px] text-[rgba(192,57,43,0.8)]">
-                          {explore.title}
-                        </h3>
-                        <p className="mt-2 w-full font-normal text-[20px] text-[rgba(0,0,0,0.8)]">
-                          {explore.desc}
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-
-            <div className="flex items-center justify-center gap-6">
-              <CarouselPrevious className="static translate-y-0 hover:cursor-pointer" />
-              <Progress value={(current / count) * 100} className="w-40 " />
-              <CarouselNext className="static translate-y-0 hover:cursor-pointer" />
-            </div>
-          </Carousel>
-        </div>
+        <Swiper spaceBetween={24} slidesPerView={2}>
+          {exploreData.map((explore) => (
+            <Card className="border-0 shadow-none">
+              <CardContent className="flex flex-col p-4">
+                <img
+                  src={explore.image}
+                  alt={explore.title}
+                  loading="lazy"
+                  className="w-full h-[348px] object-cover rounded-lg border-3 border-[rgba(192,57,43,1)]"
+                />
+                <h3 className="mt-4 font-bold text-[32px] text-[rgba(192,57,43,0.8)]">
+                  {explore.title}
+                </h3>
+                <p className="mt-2 w-full font-normal text-[20px] text-[rgba(0,0,0,0.8)]">
+                  {explore.desc}
+                </p>
+              </CardContent>
+            </Card>
+          ))}
+        </Swiper>
       </div>
     </section>
   );
