@@ -35,7 +35,7 @@ export default function Membership() {
                 {membership.desc}
               </p>
               <div className="mt-4 flex justify-end">
-                <button className="bg-white border-2 border-[rgba(192,57,43,1)] rounded-[15px] px-7 py-1.5  font-bold text-[20px] text-[rgba(192,57,43,1)] hover:cursor-pointer">
+                <button className="bg-white border-2 border-[rgba(192,57,43,1)] rounded-[15px] px-7 py-1.5  font-bold text-[20px] text-[rgba(192,57,43,1)] hover:cursor-pointer hover:bg-[rgba(192,57,43,1)] hover:text-white duration-150">
                   Select
                 </button>
               </div>
