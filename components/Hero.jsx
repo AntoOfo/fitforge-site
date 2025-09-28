@@ -1,10 +1,15 @@
 import Header from "./Header";
 import HeroVideo from "../videos/hero_video_5.webm";
+import HeroImg from "../images/hero_img.webp";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="w-full h-[calc(100vh-80px)] overflow-hidden">
-      <video
+    <section
+      id="home"
+      className="w-full h-[calc(100vh-80px)] bg-cover bg-center bg-[rgba(53,0,0,0.55)] bg-blend-overlay"
+      style={{ backgroundImage: `url(${HeroImg})` }}
+    >
+      {/*<video
         autoPlay
         loop
         muted
@@ -13,15 +18,15 @@ export default function HeroSection() {
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
         <source src={HeroVideo} type="video/mp4" />
-      </video>
+      </video> */}
       <div
         data-aos="fade-right"
         className="relative z-10 flex flex-col items-center justify-center h-full gap-6 font-[Poppins] text-white"
       >
-        <h1 className="font-extrabold text-5xl">
+        <h1 className="font-extrabold text-[clamp(1rem,4vw,3rem)]">
           Transform Your Body, Transform Your Life
         </h1>
-        <h2 className="font-semibold text-3xl">
+        <h2 className="font-semibold text-[clamp(0.8rem,2.5vw,1.875rem)]">
           Join our community and reach your fitness goals
         </h2>
         {/* for later: border-2 border-[rgba(192,57,43,0.4)] */}
