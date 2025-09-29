@@ -28,7 +28,7 @@ export default function Mission() {
       id="about"
       className="w-full bg-[rgba(239,239,239,1)] font-[Poppins]"
     >
-      <div className="flex [@media(max-width:1070px)]:flex-col gap-52 [@media(max-width:1070px)]:gap-12 py-16  mt-6 ml-32 mr-32">
+      <div className="flex [@media(max-width:1084px)]:flex-col [@media(max-width:1084px)]:items-center [@media(max-width:1084px)]:text-center gap-52 [@media(max-width:1084px)]:gap-12 py-16  mt-6 ml-32 mr-32">
         <div>
           <h2
             data-aos="fade-right"
@@ -50,7 +50,7 @@ export default function Mission() {
 
         <div
           data-aos="fade-left"
-          className="w-89 h-96 rounded-4xl overflow-hidden flex-shrink-0"
+          className="w-[clamp(8rem,23.4vw,22.25rem)] h-[clamp(6rem,25.2vw,24rem)] rounded-4xl overflow-hidden flex-shrink-0"
         >
           {/* outer wrapper for whole carousel, scrolling.. snapping*/}
           <Carousel className="w-full h-full">
