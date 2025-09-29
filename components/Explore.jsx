@@ -49,17 +49,17 @@ export default function Explore() {
                 <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/2">
                   <div className="p-0">
                     <Card className="border-0 shadow-none">
-                      <CardContent className="flex flex-col p-4">
+                      <CardContent className="flex flex-col [@media(max-width:767px)]:items-center [@media(max-width:767px)]:text-center p-4">
                         <img
                           src={explore.image}
                           alt={explore.title}
                           loading="lazy"
-                          className="w-full h-[280px] object-cover rounded-lg border-3 border-[rgba(192,57,43,1)]"
+                          className="w-full [@media(max-width:767px)]:w-[clamp(19.1rem,80vw,38.3rem)] h-[348px] [@media(max-width:767px)]:h-[clamp(8.7rem,36.5vw,17.5rem)] object-cover rounded-lg border-3 border-[rgba(192,57,43,1)]"
                         />
                         <h3 className="mt-4 font-bold text-[clamp(1rem,2.1vw,2rem)] text-[rgba(192,57,43,0.8)]">
                           {explore.title}
                         </h3>
-                        <p className="mt-2 w-full font-normal text-[clamp(0.62rem,1.3vw,1.25rem)] text-[rgba(0,0,0,0.8)]">
+                        <p className="mt-2 w-full [@media(max-width:767px)]:w-[clamp(19.1rem,80vw,38.3rem)] font-normal text-[clamp(0.5rem,1.3vw,1.25rem)] text-[rgba(0,0,0,0.8)]">
                           {explore.desc}
                         </p>
                       </CardContent>
