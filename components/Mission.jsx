@@ -28,7 +28,7 @@ export default function Mission() {
       id="about"
       className="w-full bg-[rgba(239,239,239,1)] font-[Poppins]"
     >
-      <div className="flex gap-52 py-16 mt-6 ml-32 mr-32">
+      <div className="flex [@media(max-width:1070px)]:flex-col gap-52 [@media(max-width:1070px)]:gap-12 py-16  mt-6 ml-32 mr-32">
         <div>
           <h2
             data-aos="fade-right"
@@ -38,7 +38,7 @@ export default function Mission() {
           </h2>
           <p
             data-aos="fade-right"
-            className="mt-9 font-normal text-2xl text-[rgba(0,0,0,0.7)]"
+            className="mt-9 font-normal text-[clamp(0.5rem,1.5vw,1.5rem)] text-[rgba(0,0,0,0.7)]"
           >
             We are the catalyst for your best life, not just a facility. We
             believe true fitness is built on confidence, consistency, and
