@@ -32,7 +32,7 @@ export default function Mission() {
         <div>
           <h2
             data-aos="fade-right"
-            className="font-bold text-[40px] text-[rgba(192,57,43,1)]"
+            className="font-bold text-[clamp(1rem,2.6vw,2.5rem)] text-[rgba(192,57,43,1)]"
           >
             Our Mission
           </h2>
