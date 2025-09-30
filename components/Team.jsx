@@ -6,7 +6,7 @@ export default function Team() {
   return (
     <>
       <section className="w-full py-20 font-[Poppins]">
-        <div className="ml-32 mr-32">
+        <div className="ml-[clamp(4rem,8.4vw,8rem)] mr-[clamp(4rem,8.4vw,8rem)]">
           <h1 className="font-bold text-[clamp(1rem,2.6vw,2.5rem)] text-[rgba(192,57,43,1)]">
             Meet The Team
           </h1>
@@ -14,21 +14,21 @@ export default function Team() {
             {teamData.map((team) => (
               <div
                 key={team.name}
-                className="justify-items-center py-12 px-4 rounded-[134px] bg-[rgba(239,239,239,1)] shadow-[0_2px_8px_rgba(0,0,0,0.12)]"
+                className="justify-items-center py-[clamp(1.5rem,3.1vw,3rem)] px-[clamp(0.5rem,1vw,1rem)] rounded-[134px] bg-[rgba(239,239,239,1)] shadow-[0_2px_8px_rgba(0,0,0,0.12)]"
               >
                 <img
                   src={team.image}
                   loading="lazy"
                   alt={team.name}
-                  className="w-[149px] h-[149px] rounded-full object-cover"
+                  className="w-[clamp(4.6rem,9.7vw,9.3rem)] h-[clamp(4.6rem,9.7vw,9.3rem)] rounded-full object-cover"
                 />
-                <h3 className="mt-[18px] font-semibold text-[20px] text-[rgba(192,57,43,1)]">
+                <h3 className="mt-[clamp(0.56rem,1.1vw,1.125rem)] font-semibold text-[clamp(0.5rem,1.3vw,1.25rem)] text-[rgba(192,57,43,1)]">
                   {team.name}
                 </h3>
-                <p className="font-medium italic text-[16px] text-[rgba(0,0,0,0.6)]">
+                <p className="font-medium italic text-[clamp(0.5rem,1vw,1rem)] text-[rgba(0,0,0,0.6)]">
                   {team.role}
                 </p>
-                <p className="mt-[26px] font-medium text-center text-[16px] w-[187px] text-[rgba(0,0,0,0.6)]">
+                <p className="mt-[clamp(0.8rem,1.7vw,1.625rem)] font-medium text-center text-[clamp(0.5rem,1vw,1rem)] w-[clamp(5.8rem,12.2vw,11.68rem)] text-[rgba(0,0,0,0.6)]">
                   {team.about}
                 </p>
               </div>
