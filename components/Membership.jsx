@@ -23,22 +23,24 @@ export default function Membership() {
           {membershipData.map((membership) => (
             <div
               data-aos="fade-left"
-              className="mt-12 px-5 py-6 rounded-2xl bg-white"
+              className="mt-12 px-5 py-6 rounded-2xl bg-white flex flex-col"
             >
-              <p className="font-bold text-[20px]">{membership.type}</p>
+              <p className="font-bold text-[clamp(0.5rem,1.3vw,1.25rem)]">
+                {membership.type}
+              </p>
               <span className="mt-[3px] mb-0.5 flex items-baseline">
-                <h1 className="font-bold text-[64px] text-[rgba(192,57,43,1)]">
+                <h1 className="font-bold text-[clamp(2rem,4.2vw,4rem)] text-[rgba(192,57,43,1)]">
                   £{membership.price}
                 </h1>
-                <p className="font-medium text-[20px] text-[rgba(0,0,0,0.7)]">
+                <p className="font-medium text-[clamp(0.5rem,1.3vw,1.25rem)] text-[rgba(0,0,0,0.7)]">
                   /month
                 </p>
               </span>
-              <p className="font-medium text-[20px] w-[355px] text-[rgba(0,0,0,0.7)]">
+              <p className="font-medium text-[clamp(0.5rem,1.3vw,1.25rem)] w-[355px] text-[rgba(0,0,0,0.7)]">
                 {membership.desc}
               </p>
-              <div className="mt-4 flex justify-end">
-                <button className="bg-white border-2 border-[rgba(192,57,43,1)] rounded-[15px] px-7 py-1.5  font-bold text-[20px] text-[rgba(192,57,43,1)] hover:cursor-pointer hover:bg-[rgba(192,57,43,1)] hover:text-white duration-150">
+              <div className="mt-auto flex justify-end">
+                <button className="bg-white border-2 border-[rgba(192,57,43,1)] rounded-[15px] px-[clamp(0.86rem,1.8vw,1.75rem)] py-[clamp(0.18rem,0.39vw,0.375rem)]  font-bold text-[clamp(0.5rem,1.3vw,1.25rem)] text-[rgba(192,57,43,1)] hover:cursor-pointer hover:bg-[rgba(192,57,43,1)] hover:text-white duration-150">
                   Select
                 </button>
               </div>
