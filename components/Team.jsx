@@ -7,10 +7,10 @@ export default function Team() {
     <>
       <section className="w-full py-20 font-[Poppins]">
         <div className="ml-32 mr-32">
-          <h1 className="font-bold text-[40px] text-[rgba(192,57,43,1)]">
+          <h1 className="font-bold text-[clamp(1rem,2.6vw,2.5rem)] text-[rgba(192,57,43,1)]">
             Meet The Team
           </h1>
-          <div className="flex justify-between mt-[72px]">
+          <div className="flex justify-between mt-[clamp(2.25rem,4.7vw,4.5rem)]">
             {teamData.map((team) => (
               <div
                 key={team.name}
