@@ -7,12 +7,15 @@ export default function Membership() {
       className="w-full py-20 bg-[rgba(192,57,43,1)] font-[Poppins]"
     >
       <div className="ml-32 mr-32">
-        <h1 data-aos="fade-right" className="font-bold text-[40px] text-white">
+        <h1
+          data-aos="fade-right"
+          className="font-bold text-[clamp(1rem,2.6vw,2.5rem)] text-white"
+        >
           Membership Plans
         </h1>
         <p
           data-aos="fade-right"
-          className="font-light text-[20px] text-[rgba(255,255,255,0.85)]"
+          className="font-light text-[clamp(0.5rem,1.3vw,1.25rem)] text-[rgba(255,255,255,0.85)]"
         >
           Find the commitment level that fits your goals and budget.
         </p>
