@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator";
 export default function Team() {
   return (
     <>
-      <section className="w-full py-20 font-[Poppins]">
+      <section className="w-full py-[clamp(2.5rem,5.2vw,5rem)] font-[Poppins]">
         <div className="ml-[clamp(4rem,8.4vw,8rem)] mr-[clamp(4rem,8.4vw,8rem)]">
           <h1 className="font-bold text-[clamp(1rem,2.6vw,2.5rem)] text-[rgba(192,57,43,1)]">
             Meet The Team
