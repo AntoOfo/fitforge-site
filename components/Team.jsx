@@ -10,7 +10,7 @@ export default function Team() {
           <h1 className="font-bold text-[clamp(1rem,2.6vw,2.5rem)] text-[rgba(192,57,43,1)]">
             Meet The Team
           </h1>
-          <div className="grid grid-cols-4 [@media(max-width:760px)]:grid-cols-2 gap-[clamp(3.5rem,7.3vw,7rem)] mt-[clamp(2.25rem,4.7vw,4.5rem)]">
+          <div className="grid grid-cols-4 [@media(max-width:760px)]:grid-cols-2 [@media(max-width:460px)]:flex [@media(max-width:460px)]:flex-col gap-[clamp(3.5rem,7.3vw,7rem)] mt-[clamp(2.25rem,4.7vw,4.5rem)]">
             {teamData.map((team) => (
               <div
                 key={team.name}
@@ -25,7 +25,7 @@ export default function Team() {
                 <h3 className="mt-[clamp(0.56rem,1.1vw,1.125rem)] font-semibold text-[clamp(0.5rem,1.3vw,1.25rem)] text-[rgba(192,57,43,1)]">
                   {team.name}
                 </h3>
-                <p className="font-medium italic text-[clamp(0.5rem,1vw,1rem)] text-[rgba(0,0,0,0.6)]">
+                <p className="font-medium italic text-[clamp(0.5rem,1vw,1rem)] [@media(max-width:518px)]:[@media(min-width:460px)]:text-[6.4px] text-[rgba(0,0,0,0.6)]">
                   {team.role}
                 </p>
                 <p className="mt-[clamp(0.8rem,1.7vw,1.625rem)] font-medium text-center text-[clamp(0.5rem,1vw,1rem)] w-[clamp(5.8rem,12.2vw,11.68rem)] [@media(max-width:760px)]:w-full text-[rgba(0,0,0,0.6)]">
