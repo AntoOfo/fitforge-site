@@ -2,12 +2,12 @@ import { testimonialData } from "../data/testimonialData";
 
 export default function Testimonials() {
   return (
-    <section className="w-full py-20 font-[Poppins]">
-      <div className="ml-32 mr-32">
-        <h1 className="font-bold text-[40px] text-[rgba(192,57,43,1)]">
+    <section className="w-full py-[clamp(2.5rem,5.2vw,5rem)] font-[Poppins]">
+      <div className="ml-[clamp(4rem,8.4vw,8rem)] mr-[clamp(4rem,8.4vw,8rem)]">
+        <h1 className="font-bold text-[clamp(1rem,2.6vw,2.5rem)] text-[rgba(192,57,43,1)]">
           Testimonials
         </h1>
-        <div className="flex justify-between mt-[110px]">
+        <div className="flex justify-between mt-[clamp(3.4rem,7.2vw,6.875rem)]">
           {testimonialData.map((testimony) => (
             <div
               key={testimony.name}
