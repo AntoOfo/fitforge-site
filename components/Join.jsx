@@ -10,7 +10,7 @@ export default function Join() {
         >
           Why Join Us?
         </h2>
-        <div className="mt-12 mb-16 grid grid-cols-4 [@media(max-width:624px)]:grid-cols-2 [@media(max-width:624px)]:gap-18 [@media(max-width:624px)]:mt-6 [@media(max-width:400px)]:flex [@media(max-width:400px)]:flex-col  justify-between gap-[clamp(2rem,14.5vw,13.5rem)] w-full">
+        <div className="mt-12 mb-[clamp(2rem,4.2vw,4rem)] grid grid-cols-4 [@media(max-width:624px)]:grid-cols-2 [@media(max-width:624px)]:gap-18 [@media(max-width:624px)]:mt-6 [@media(max-width:400px)]:flex [@media(max-width:400px)]:flex-col  justify-between gap-[clamp(2rem,14.5vw,13.5rem)] w-full">
           {joinData.map((join) => (
             <div data-aos="fade-up" className="flex flex-col items-center">
               <img
