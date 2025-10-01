@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="ml-[clamp(4rem,8.4vw,8rem)] mr-[clamp(4rem,8.4vw,8rem)]">
         <div className="flex justify-between">
           <div>
-            <h2 className="font-semibold text-[clamp(0.75rem,1.5vw,1.5re[clamp(0.75rem,1.5vw,1.5rem)] text-white">
+            <h2 className="font-semibold text-[clamp(0.75rem,1.5vw,1.5rem)] text-white">
               Explore
             </h2>
             <p className="mt-6 font-normal text-[clamp(0.6rem,1.3vw,1.25rem)] text-[rgba(255,255,255,0.8)] hover:cursor-pointer">
