@@ -5,7 +5,7 @@ export default function Footer() {
       className="w-full py-[clamp(2.5rem,5.2vw,5rem)] bg-[rgba(44,44,44,1)] font-[Poppins]"
     >
       <div className="ml-[clamp(4rem,8.4vw,8rem)] mr-[clamp(4rem,8.4vw,8rem)]">
-        <div className="flex [@media(max-width:370px)]:flex-col [@media(max-width:370px)]:items-center justify-between">
+        <div className="flex [@media(max-width:370px)]:flex-col [@media(max-width:370px)]:items-center [@media(max-width:370px)]:text-center [@media(max-width:370px)]:gap-8 justify-between">
           <div>
             <h2 className="font-semibold text-[clamp(0.75rem,1.5vw,1.5rem)] text-white">
               Explore
