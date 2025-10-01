@@ -30,7 +30,7 @@ export default function Explore() {
 
   return (
     <section id="services" className="w-full font-[Poppins]">
-      <div className="flex flex-col py-16 items-center">
+      <div className="flex flex-col py-[clamp(2.5rem,5.2vw,5rem)] items-center">
         <h2
           data-aos="fade-up"
           className="font-bold text-[clamp(1rem,2.6vw,2.5rem)] text-[rgba(192,57,43,1)]"

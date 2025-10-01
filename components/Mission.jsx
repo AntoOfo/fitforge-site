@@ -28,17 +28,17 @@ export default function Mission() {
       id="about"
       className="w-full bg-[rgba(239,239,239,1)] font-[Poppins]"
     >
-      <div className="flex [@media(max-width:1084px)]:flex-col [@media(max-width:1084px)]:items-center [@media(max-width:1084px)]:text-center gap-52 [@media(max-width:1084px)]:gap-12 py-16  mt-6 ml-32 mr-32">
+      <div className="flex [@media(max-width:1084px)]:flex-col [@media(max-width:1084px)]:items-center [@media(max-width:1084px)]:text-center gap-52 [@media(max-width:1084px)]:gap-[clamp(1rem,4vw,3rem)] py-[clamp(2.5rem,5.2vw,5rem)]  mt-6 ml-[clamp(4rem,8.4vw,8rem)] mr-[clamp(4rem,8.4vw,8rem)]">
         <div>
           <h2
             data-aos="fade-right"
-            className="font-bold text-[clamp(1rem,2.6vw,2.5rem)] text-[rgba(192,57,43,1)]"
+            className="font-bold text-[clamp(1rem,2.6vw,2.5rem)] text-[rgba(192,57,43,1)] [@media(max-width:1084px)]:text-start"
           >
             Our Mission
           </h2>
           <p
             data-aos="fade-right"
-            className="mt-9 font-normal text-[clamp(0.5rem,1.5vw,1.5rem)] text-[rgba(0,0,0,0.7)]"
+            className="mt-[clamp(0.5rem,2.3vw,2.25rem)] font-normal text-[clamp(0.5rem,1.5vw,1.5rem)] text-[rgba(0,0,0,0.7)] [@media(max-width:1084px)]:text-start"
           >
             We are the catalyst for your best life, not just a facility. We
             believe true fitness is built on confidence, consistency, and
@@ -50,7 +50,7 @@ export default function Mission() {
 
         <div
           data-aos="fade-left"
-          className="w-[clamp(8rem,23.4vw,22.25rem)] h-[clamp(6rem,25.2vw,24rem)] rounded-4xl overflow-hidden flex-shrink-0"
+          className="w-[clamp(8rem,23.4vw,22.25rem)] [@media(max-width:1084px)]:w-full h-[clamp(6rem,25.2vw,24rem)] rounded-4xl overflow-hidden flex-shrink-0"
         >
           {/* outer wrapper for whole carousel, scrolling.. snapping*/}
           <Carousel className="w-full h-full">
@@ -63,7 +63,7 @@ export default function Mission() {
                   <img
                     src={imgSrc}
                     loading="lazy"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-[40%_30%]"
                   />
                 </CarouselItem>
               ))}

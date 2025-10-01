@@ -2,8 +2,8 @@ import { joinData } from "../data/joinData";
 
 export default function Join() {
   return (
-    <section className="mt-16 w-full flex flex-col items-center font-[Poppins]">
-      <div className="ml-32 mr-32">
+    <section className="mt-[clamp(2rem,4.2vw,4rem)] w-full flex flex-col items-center font-[Poppins]">
+      <div className="ml-[clamp(4rem,8.4vw,8rem)] mr-[clamp(4rem,8.4vw,8rem)]">
         <h2
           data-aos="fade-up"
           className="text-center font-bold text-[clamp(1rem,2.6vw,2.5rem)] text-[rgba(192,57,43,1)] [@media(max-width:400px)]:mb-14"
