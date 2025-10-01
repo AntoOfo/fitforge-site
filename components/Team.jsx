@@ -10,7 +10,7 @@ export default function Team() {
           <h1 className="font-bold text-[clamp(1rem,2.6vw,2.5rem)] text-[rgba(192,57,43,1)]">
             Meet The Team
           </h1>
-          <div className="flex justify-between mt-[clamp(2.25rem,4.7vw,4.5rem)]">
+          <div className="grid grid-cols-4 gap-24 mt-[clamp(2.25rem,4.7vw,4.5rem)]">
             {teamData.map((team) => (
               <div
                 key={team.name}
