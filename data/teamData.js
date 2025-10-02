@@ -1,6 +1,6 @@
 import Marcus from "../images/team_1.webp"
-import Ava from "../images/team_2.webp"
-import Jasmine from "../images/team_3.webp"
+import Ava from "../images/team_2.crop.webp"
+import Jasmine from "../images/team_3.crop.webp"
 import David from "../images/team_4.webp"
 
 export const teamData = [
