@@ -119,21 +119,3 @@
     @apply bg-background text-foreground;
   }
 }
-
-@keyframes hero-pulse {
-
-  0%,
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-
-  50% {
-    opacity: 0.95;
-    transform: scale(1.02);
-  }
-}
-
-.hero-pulse {
-  animation: hero-pulse 2s infinite;
-}
