@@ -17,7 +17,7 @@
 
 ---
 
-## 🌐 Live Site
+## Live Site
 
 Check out the site here:  
 https://fitforge-site.vercel.app/
@@ -90,7 +90,7 @@ https://fitforge-site.vercel.app/
 ---
 
 
-## 🛠️ Setup Guide
+## Setup Guide
 
 1. Clone the repo:
    
